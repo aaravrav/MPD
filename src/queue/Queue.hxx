@@ -340,7 +340,7 @@ struct Queue {
 	 * Shuffles the virtual order of songs, but does not move them
 	 * physically.  This is used in random mode.
 	 */
-	void ShuffleOrder() noexcept;
+	void ShuffleOrder(int avoid_position = -1) noexcept;
 
 	void ShuffleOrderFirst(unsigned start, unsigned end) noexcept;
 
